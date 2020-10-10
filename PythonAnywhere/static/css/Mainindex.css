@@ -1,0 +1,25 @@
+select {
+    width: 100%;
+    background-color: azure;
+    text-align: right;
+    height: 30px;
+}
+
+.form option {
+    text-align: right;
+    background-color: black;
+    font-size: large;
+}
+
+.form label {
+    font: bold;
+}
+
+.GUIDLINES {
+    padding: 30px;
+    margin-left: 50px;
+    background-color: aqua;
+    font-size: medium;
+    border-radius: 5%;
+    border: solid blueviolet 4px;
+}

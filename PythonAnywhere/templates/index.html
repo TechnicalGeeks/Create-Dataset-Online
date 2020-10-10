@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Technical Geeks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy | CreateLecture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!--CSS File Link-->
+    <link rel="stylesheet" href="../static/css/addstudent.css">
+    <link rel="stylesheet" href="../static/css/lecture.css">
+    <link rel="stylesheet" href="../static/css/Mainindex.css">
+
+
+    <!-- Awesome Fonts Link to StyleSheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <a href="template.html" class="Institution_logo">
+            <img src="../static/images/logo.jpg" alt="PCCoE" class="logo">
+        </a>
+        <h1>PIMPRI CHINCHWAD COLLEGE OF ENGINEERING</h1>
+
+    </header>
+    <main>
+        <!-- <form method="POST">
+            <div class="Year_SELECT">
+                <p>Year</p>
+                <select name="comp_select" class="select">
+                {% for o in data %}
+                <option value="{{ o.name }}" >{{ o.name }}</option>
+                {% endfor %}
+              </select>
+
+                <p>Division</p>
+                <select name="comp_select_div" class="select">
+                    {% for o in div %}
+                    <option value="{{ o.name }}" width="50px">{{ o.name }}</option>
+                    {% endfor %}
+            </select>
+
+            </div>
+            <button name="Camera" id="Camera" onclick="alert('Press q to Quit')"> Camera <Button></Button></button>
+        </form> -->
+
+
+        <div class="container">
+            <form action="" id="form" name='form' class="form" onsubmit="return validateForm()" method="POST">
+                <h2>Create Lecture</h2>
+                <div class="form-control">
+                    <label for="lname">Enter Name</label>
+                    <input type="text" id="lname" placeholder="Enter Name">
+                </div>
+                <div class="form-control">
+                    <label for="subject">Year</label>
+                    <select name="comp_select" class="select">
+                        {% for o in data %}
+                        <option value="{{ o.name }}" >{{ o.name }}</option>
+                        {% endfor %}
+                      </select>
+                </div>
+                <div class="form-control">
+                    <label for="alist">Division</label>
+                    <select name="comp_select_div" class="select">
+                        {% for o in div %}
+                        <option value="{{ o.name }}" >{{ o.name }}</option>
+                        {% endfor %}
+                </select>
+                </div>
+                <div class="form-control">
+                    <label for="alist">Roll Number</label>
+                    <input type="text" id="roll" placeholder="Name">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="GUIDLINES">
+            <h1>GUIDLINES </h1>
+            <p>1. All Fields are mandatory</p>
+            <p>2. On clicking submit button new Python window will open. </p>
+            <p>3. Try to capture good quality images</p>
+            <p>4. Press 'q' On keyboard to quit capturing images</p>
+            <p>5. After 30-40 Sec you can close capturing or it will close automatically</p>
+
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="copyright">
+            <a href="LICENSE" target="_blank">
+                &copy; 2020 technicalgeeks
+            </a>
+        </div>
+        <div class="footer-links">
+            <a href="https://facebook.com/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:technicalgeeks20@gmail.com" target="_blank" style="text-decoration: none">
+                <i class="far fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../static/javascript/index.js"></script>
+</body>
+
+</html>
