@@ -25,8 +25,8 @@ for (root,dirs,files) in os.walk(path, topdown=True):
      #      print(path)
      #      path_cloud = path
      #      # storage.child("Dataset").put(str(path))
-
-
+     path =os.path.join(root)
+print(path)
 for images in os.listdir(root):
           path= os.path.join(root,images)
           path_cloud = path
