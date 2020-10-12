@@ -16,6 +16,7 @@ firebase = pyrebase.initialize_app(config)
 storage = firebase.storage()
 
 path ="Dataset"
+root = ""
 
 for (root,dirs,files) in os.walk(path, topdown=True): 
      print (root )
