@@ -7,7 +7,7 @@ select {
 
 .form option {
     text-align: right;
-    background-color: black;
+    background-color: rgb(230, 220, 220);
     font-size: large;
 }
 
